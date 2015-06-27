@@ -12,11 +12,12 @@
       </div><!-- navbar-header -->
       <div class="collapse navbar-collapse" id="collapse">
         <ul class="nav navbar-nav navbar-right">
-          <li class="active"><%= link_to 'Home', root_path, id: "featured" %></li>
-          <li><%= link_to 'Meet us', pages_meetus_path %></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#staff">Staff</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
+          <li class="active"><%= link_to 'Home', root_path %></li>
+          <li><%= link_to 'Meet us', meetus_path %></li>
+          <li><%= link_to 'Kids', kids_path %></li>
+          <li><%= link_to 'Adults', adults_path %></li>
+          <li><<%= link_to 'Parties', parties_path %></li>
+          <li><<%= link_to 'Contact', contact_path %></li>
         </ul>        
       </div><!-- collapse navbar-collapse -->
     </div><!-- container -->

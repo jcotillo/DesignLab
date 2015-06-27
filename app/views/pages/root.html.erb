@@ -1,10 +1,13 @@
 <div class="carousel fade" data-ride="carousel" id="featured">
 
     <ol class="carousel-indicators">
+      <li data-target="#featured" data-slide-to="0"></li>
+      <li data-target="#featured" data-slide-to="1" class="active"></li>
+      <li data-target="#featured" data-slide-to="2"></li>
     </ol>
 
     <div class="carousel-inner fullheight">
-      <div class="item"><%= image_tag('buttons.jpg') %></div>
+      <div class="item active"><%= image_tag('buttons.jpg') %></div>
       <div class="item"><%= image_tag('cat.jpg') %></div>
       <div class="item"><%= image_tag('catflower.jpg') %></div>
       <div class="item"><%= image_tag('logo.jpg') %></div>

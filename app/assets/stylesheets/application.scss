@@ -45,7 +45,8 @@ header .navbar-default {
 }
 
 header .navbar-default .navbar-nav a {
-  color: white;
+  color: #AEA152;
+  font-weight: 400;
   padding: 5px 8px;
 }
 
@@ -55,9 +56,9 @@ header .navbar-default .navbar-nav a:hover {
 
 header .navbar-default .navbar-nav .active a {
   font-weight: 700;
-  color: #EEC856;
+  color: #FF7330;
   background: transparent;
-  border-bottom: 4px solid #EEC856;
+  border-bottom: 4px solid #FF7330;
   text-shadow: none;
 }
 
@@ -188,21 +189,22 @@ footer {
   background: #2d2d2d;
   color: white;
   font-size: .8em;
+  text-align: center;
   padding: 5px 0 10px 0;
 }
 
 footer a {
-  color: #E1DEED;
+  color: #E3D98D;
 }
 
 footer a:hover {
   color: #EEC856 !important;
 }
 
-footer .phone {
+footer .email{
   font-size: 1.4em;
   font-weight: 700;
-  color: #E0E6AE;
+  color: #FF7330;
 }
 
 footer .navbar {
@@ -220,5 +222,5 @@ footer .navbar-nav>li a {
   padding-top: 0;
   padding-bottom: 0;
   text-decoration: underline;
-  color: #EEC856 !important;
+  color: #E3D98D !important;
 }

@@ -6,11 +6,11 @@ Rails.application.routes.draw do
 
   resources :courses
 
-  root "pages#root"
-  get "pages/meetus"
-  get "pages/kids"
-  get "pages/adults"
-  get "pages/parties"
-  get "pages/contact"
+  root "pages#root" 
+  get "/meetus" => "pages#meetus"
+  get "/kids" => "pages#kids"
+  get "/adults" => "pages#adults"
+  get "/parties" => "pages#parties"
+  get "/contact" => "pages#contact"
 
 end
