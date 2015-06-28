@@ -26,24 +26,45 @@
 }
 #mission {
   background-color: #E7DDDF;
+  min-height:300px;
   // background-image: linear-gradient(to bottom, #EFAF5D, #E7DDDF);
 }
 #mission .heading {
   text-align: center;
+  margin-top: -20px;
+  margin-bottom: 40px;
+}
+
+#mission .statement, .services {
+  text-align: center;
+
+}
+
+#mission i.fa {
+  padding:10px;
+  border-radius: 35px;
+  background-color: #E7C3DF;
+  display: block;
+  width: 80px;
+  margin: 0 auto;
+  margin-top: 35px;
 }
 
 /**  Page -- History **/
 #history {
+ padding: 70px;
  background-color: #E3D98D;
  background-image: linear-gradient(to bottom, #E7DDDF, #E3D98D);
  min-height: 500px;
 }
 #history .heading {
  text-align: center;
+ margin-bottom: 40px;
 }
 #history .historypic {
- background: image-url('angie.jpg');
- min-height: 300px;
+ background: image-url('sewingkit.jpg');
+ padding: 25px;
+ min-height: 500px;
  background-size: cover;
  background-repeat: no-repeat;
  background-position: center center;

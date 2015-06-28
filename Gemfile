@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'font-awesome-rails'
 gem 'bootstrap-sass', '~> 3.3.5'
 gem 'autoprefixer-rails'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

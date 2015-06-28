@@ -37,21 +37,16 @@ $(function() {
     $(this).remove();
   });
 
-  //Use smooth scrolling when clicking on navigation
-  $('.navbar a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') === 
-      this.pathname.replace(/^\//,'') && 
-      location.hostname === this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top-topoffset+2
-        }, 500);
-        return false;
-      } //target.length
-    } //click function
-  }); //smooth scrolling
+// jQuery for page scrolling feature - requires jQuery Easing plugin
+$(function() {
+    $('a.page-scroll').bind('click', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 1500, 'easeInOutExpo');
+        event.preventDefault();
+    });
+});
 
 
   $('.carousel').carousel({
