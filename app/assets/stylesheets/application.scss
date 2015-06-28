@@ -35,13 +35,18 @@ h1, h2, h3, h4, h5, h6 {
 /**  Header Navigation **/
 
 header .navbar {
-  padding: 30px 0;
+  padding: 5px 0 8px 0;
   transition: all .5s ease-out;
 }
 
 header .navbar-default {
-  background-color: transparent;
+  background-color: white;
   border: none;
+}
+header .navbar-default .navbar-nav a {
+  color: #AEA152;
+  font-weight: 400;
+  // padding: 5px 8px;
 }
 
 header .navbar-default .navbar-nav a {
@@ -52,21 +57,23 @@ header .navbar-default .navbar-nav a {
 
 header .navbar-default .navbar-nav a:hover {
   color: #EEC856;
-}
+} 
 
 header .navbar-default .navbar-nav .active a {
   font-weight: 700;
   color: #FF7330;
   background: transparent;
-  border-bottom: 4px solid #FF7330;
+  border-bottom: 2px solid #FF7330;
   text-shadow: none;
 }
 
 header .navbar-default .navbar-nav .active a:hover {
-  color: #E15D5F;
+  color: #EEC856;
+  border-bottom: 2px solid #EEC856;
   background: transparent;
   text-shadow: none;
 }
+
 
 /**  Navbar Brand **/
 
@@ -75,27 +82,14 @@ header .navbar-brand {
   background-size: 85%;
   background-repeat: no-repeat;
   background-position: 15px 0;
+  // margin-top: 10px;
+  width: 150px;
   height: auto;
-}
-
-header .navbar-brand h1 {
-  color: white;
-  margin: 0;
-  font-size: 1.8em;
-  font-weight: 400;
-  padding-left: 105px;
-}
-
-header .navbar-brand span.subhead {
-  display: block;
-  font-family: "Roboto Slab", serif;
-  font-size: .6em;
-  font-weight: 100;
 }
 
 /**  Navbar Toggle **/
 header .navbar-toggle {
-  background-color: #279182;
+  background-color:  #E7DDDF;
 }
 
 header .navbar-default .navbar-toggle .icon-bar {
@@ -105,7 +99,7 @@ header .navbar-default .navbar-toggle .icon-bar {
 @media only screen
 and (max-width: 768px) {
   header .navbar-collapse.in {
-    background-color: rgba(0,0,0, .5);
+    background-color: rgba(231,221,223, .5);
   }
 }
 /**  nav inbody **/
@@ -176,6 +170,7 @@ header .inbody .navbar-brand span.subhead {
 }
 
 #featured .item {
+  margin-top:65px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;

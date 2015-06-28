@@ -1,3 +1,81 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+/**  Page -- Reviews **/
+.reviews {
+  background-color: #E7DDDF;
+}
+
+.reviews blockquote {
+  margin: 0;
+  border-left: none;
+  position: relative;
+}
+
+.reviewer {
+	border-left: 50px;
+	text-align: center;
+	font-weight: 400;
+	color: #6D680A;
+} 
+
+/**  Page -- Mission **/
+.page {
+  padding: 50px 0;
+}
+#mission {
+  background-color: #E7DDDF;
+  // background-image: linear-gradient(to bottom, #EFAF5D, #E7DDDF);
+}
+#mission .heading {
+  text-align: center;
+}
+
+/**  Page -- History **/
+#history {
+ background-color: #E3D98D;
+ background-image: linear-gradient(to bottom, #E7DDDF, #E3D98D);
+ min-height: 500px;
+}
+#history .heading {
+ text-align: center;
+}
+#history .historypic {
+ background: image-url('angie.jpg');
+ min-height: 300px;
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-position: center center;
+}
+/**  Page -- Team **/
+
+.meetus {
+  margin-top: 65px;
+  background-color: #E7DDDF;
+}
+
+#team {
+  background-color: #E3D98D;
+  background-image: linear-gradient(to bottom, #E3D98D, #AEA152);
+}
+
+.member {
+  margin: 10px 0;
+}
+
+.member h3 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.2em;
+  color: #E7DDDF;
+  padding-bottom: 5px;
+}
+
+.member p {
+  font-size: .8em;
+}
+
+.member img {
+  width: 100%;
+}

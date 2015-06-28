@@ -37,12 +37,6 @@ $(function() {
     $(this).remove();
   });
 
-  //adjust height of .fullheight elements on window resize
-  $(window).resize(function() {
-    wheight = $(window).height(); //get the height of the window
-    $('.fullheight').css('height', wheight); //set to window tallness  
-  });
-
   //Use smooth scrolling when clicking on navigation
   $('.navbar a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') === 
