@@ -100,3 +100,105 @@
 .member img {
   width: 100%;
 }
+/**  Page -- kids **/
+
+.kids {
+
+}
+
+/**  Page -- in school **/
+
+#inschool {
+  padding: 0;
+}
+
+#inschool h2 {
+  display: none;
+}
+
+#inschool blockquote {
+  margin: 0;
+  padding: 0;
+  border-left: none;
+  min-height: 500px;
+  position: relative;
+}
+
+#inschool blockquote .quote {
+  background-color: rgba(255,255,255,.6);
+  padding: 20px 5%;
+  position: absolute;
+  bottom: 0;
+  width: 75%;
+  font-weight: 400;
+  border-radius: 0 50px 0 0;
+}
+
+#inschool blockquote .quote:hover {
+  background-color: rgba(239,240,196,.9);
+}
+
+#inschool #janeh {
+  background: image-url('logo.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+#inschool #johnb {
+  background: url(../images/testimonial-johnb.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+#inschool #mcphersons {
+  background: url(../images/testimonial-mcphersons.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+#inschool #lorraines {
+  background: url(../images/testimonial-lorraines.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+#inschool .quote {
+  font-size: 1.2em;
+  line-height: 110%;
+  font-weight: 400;
+}
+
+
+#inschool .quote .more, #testimonials .customer {
+  opacity: 0;
+  font-size: 0;
+  line-height: 0;
+  padding-top: 10px;
+}
+
+
+#inschool .quote:hover .more {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+  display: block;
+  opacity: 1;
+  font-size: .8em;
+  line-height: 120%;
+}
+
+#inschool .quote:hover .customer {
+  display: block;
+  font-size: .7em;
+  text-align: right;
+}
+
+#inschool .quote .intro::after {
+  content: '...';
+}
+
+#inschool .quote:hover .intro::after {
+  content: '';
+}
+
+/**  Page -- otherevents **/
+
+#otherevents .othereventspics {
+  max-width: 200px;
+  max-height: 200px;
+}
