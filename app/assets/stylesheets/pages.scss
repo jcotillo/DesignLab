@@ -13,12 +13,21 @@
   position: relative;
 }
 
+.reviews .headline {
+  display: block;
+  text-align: center;
+  min-height: 100px;
+}
+
 .reviewer {
-	border-left: 50px;
+  display: block;
+  border-left: 50px;
 	text-align: center;
 	font-weight: 400;
 	color: #6D680A;
 } 
+
+
 
 /**  Page -- Mission **/
 .page {
@@ -105,199 +114,19 @@
 .member img {
   width: 100%;
 }
+
 /**  Page -- kids **/
 
-.kids {
-  background-color: #73A575;
-  background-image: linear-gradient(to bottom, #73A575, #B3C7C2);
-}
 
-/**  Page -- Kids-camp **/
-
-
-/*---------------*/
-/***** Sarah *****/
-/*---------------*/
-.grid {
-  position: relative;
-  margin: 0 auto;
-  padding: 1em 0 4em;
-  max-width: 1000px;
-  list-style: none;
-  text-align: center;
-}
-
-/* Common style */
-.grid figure {
-  position: relative;
-  float: left;
-  overflow: hidden;
-  margin: 10px 1%;
-  min-width: 320px;
-  max-width: 480px;
-  max-height: 360px;
-  width: 48%;
-  background: #3085a3;
-  text-align: center;
-  cursor: pointer;
-}
-
-.grid figure img {
-  position: relative;
-  display: block;
-  min-height: 100%;
-  max-width: 100%;
-  opacity: 0.8;
-}
-
-.grid figure figcaption {
-  padding: 2em;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 1.25em;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.grid figure figcaption::before,
-.grid figure figcaption::after {
-  pointer-events: none;
-}
-
-.grid figure figcaption,
-.grid figure figcaption > a {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-/* Anchor will cover the whole item by default */
-.grid figure figcaption > a {
-  z-index: 1000;
-  text-indent: 200%;
-  white-space: nowrap;
-  font-size: 0;
-  opacity: 0;
-}
-
-.grid figure h2 {
-  word-spacing: -0.15em;
-  font-weight: 300;
-}
-
-.grid figure h2 span {
-  font-weight: 800;
-}
-
-.grid figure h2,
-.grid figure p {
-  margin: 0;
-}
-
-.grid figure p {
-  letter-spacing: 1px;
-  font-size: 68.5%;
-}
-figure.effect-sarah {
-  background: #FF6666;
-}
-
-figure.effect-sarah img {
-  max-width: none;
-  width: -webkit-calc(100% + 20px);
-  width: calc(100% + 20px);
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: translate3d(-10px,0,0);
-  transform: translate3d(-10px,0,0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-figure.effect-sarah:hover img {
-  opacity: 0.4;
-  -webkit-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
-}
-
-figure.effect-sarah figcaption {
-  text-align: left;
-}
-
-figure.effect-sarah h2 {
-  position: relative;
-  overflow: hidden;
-  padding: 0.5em 0;
-}
-
-figure.effect-sarah h2::after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 3px;
-  background: #fff;
-  content: '';
-  -webkit-transition: -webkit-transform 0.35s;
-  transition: transform 0.35s;
-  -webkit-transform: translate3d(-100%,0,0);
-  transform: translate3d(-100%,0,0);
-}
-
-figure.effect-sarah:hover h2::after {
-  -webkit-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
-}
-
-figure.effect-sarah p {
-  padding: 1em 0;
-  opacity: 0;
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: translate3d(100%,0,0);
-  transform: translate3d(100%,0,0);
-}
-
-figure.effect-sarah:hover p {
-  opacity: 1;
-  -webkit-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
-}
-
-#camp {
-  margin-top: 15px;
-}
-#camp h2 {
-  margin:30px;
-  text-align: center;
-  font-weight: 700px;
-}
-
-#camp .camp1 {
-  min-height: 500px;
-  background: image-url('camp1.jpg') no-repeat center center;
-  background-size: cover;
-}
-
-#camp .camp2 {
-  min-height: 500px;
-  background: image-url('camp2.jpg') no-repeat center center;
-  background-size: cover;
-}
-
-/**  Page -- in school **/
-
-#inschool {
+#kids {
   padding: 0;
 }
 
-#inschool h2 {
+#kids h2 {
   display: none;
 }
 
-#inschool blockquote {
+#kids blockquote {
   margin: 0;
   padding: 0;
   border-left: none;
@@ -305,7 +134,7 @@ figure.effect-sarah:hover p {
   position: relative;
 }
 
-#inschool blockquote .quote {
+#kids blockquote .quote {
   background-color: rgba(255,255,255,.6);
   padding: 20px 5%;
   position: absolute;
@@ -315,38 +144,39 @@ figure.effect-sarah:hover p {
   border-radius: 0 50px 0 0;
 }
 
-#inschool blockquote .quote:hover {
-  background-color: rgba(231,221,223,.9);
+#kids blockquote .quote:hover {
+  background-color: rgba(239,240,196,.9);
 }
 
-#inschool #janeh {
-  background: image-url('school1.jpg') no-repeat center center;
+#kids #camp {
+  background: image-url('buttons.jpg') no-repeat center center;
   background-size: cover;
 }
 
-#inschool #johnb {
-  background: image-url('school2.jpg') no-repeat center center;
+#kids #afterschool {
+  background: image-url('camp1.jpg') no-repeat center center;
   background-size: cover;
 }
 
-#inschool #mcphersons {
-  background: image-url('school3.jpg') no-repeat center center;
+#kids #inschool {
+  background: image-url('cat.jpg') no-repeat center center;
   background-size: cover;
 }
 
-#inschool #lorraines {
-  background: image-url('school1.jpg') no-repeat center center;
+#kids #other {
+  background: image-url('catflower.jpg') no-repeat center center;
   background-size: cover;
 }
 
-#inschool .quote {
+#kids .quote {
   font-size: 1.2em;
   line-height: 110%;
   font-weight: 400;
 }
 
 
-#inschool .quote .more, #testimonials .customer {
+#kids .quote .more, #kids .customer, 
+#kids .learnmore {
   opacity: 0;
   font-size: 0;
   line-height: 0;
@@ -354,7 +184,8 @@ figure.effect-sarah:hover p {
 }
 
 
-#inschool .quote:hover .more {
+#kids .quote:hover .more {
+  min-height:300px;
   font-family: "Open Sans", sans-serif;
   font-weight: 100;
   display: block;
@@ -362,24 +193,113 @@ figure.effect-sarah:hover p {
   font-size: .8em;
   line-height: 120%;
 }
-
-#inschool .quote:hover .customer {
+#kids .quote:hover .learnmore {
+  display: block;
+  opacity: 1;
+  color: black;
+  font-size: .8em;
+  border-radius: 0;
+  margin: 20px;
+  background-color: transparent;
+  border: 2px solid white;
+}
+#kids .quote:hover .customer {
   display: block;
   font-size: .7em;
   text-align: right;
 }
 
-#inschool .quote .intro::after {
-  content: '...';
+
+/**  Page -- Testimonials **/
+
+#testimonials {
+  padding: 0;
 }
 
-#inschool .quote:hover .intro::after {
-  content: '';
+#testimonials h2 {
+  display: none;
 }
 
-/**  Page -- otherevents **/
-
-#otherevents .othereventspics {
-  max-width: 200px;
-  max-height: 200px;
+#testimonials blockquote {
+  margin: 0;
+  padding: 0;
+  border-left: none;
+  min-height: 500px;
+  position: relative;
 }
+
+#testimonials blockquote .quote {
+  background-color: rgba(255,255,255,.6);
+  padding: 20px 5%;
+  position: absolute;
+  bottom: 0;
+  width: 75%;
+  font-weight: 400;
+  border-radius: 0 50px 0 0;
+}
+
+#testimonials blockquote .quote:hover {
+  background-color: rgba(239,240,196,.9);
+}
+
+#testimonials #janeh {
+  background: image-url('buttons.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+#testimonials #johnb {
+  background: image-url('camp1.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+#testimonials #mcphersons {
+  background: image-url('cat.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+#testimonials #lorraines {
+  background: image-url('catflower.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+#testimonials .quote {
+  font-size: 1.2em;
+  line-height: 110%;
+  font-weight: 400;
+}
+
+
+#testimonials .quote .more, #testimonials .customer, 
+#testimonials .learnmore {
+  opacity: 0;
+  font-size: 0;
+  line-height: 0;
+  padding-top: 10px;
+}
+
+
+#testimonials .quote:hover .more {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+  display: block;
+  opacity: 1;
+  font-size: .8em;
+  line-height: 120%;
+}
+#testimonials .quote:hover .learnmore {
+  display: block;
+  opacity: 1;
+  color: black;
+  font-size: .8em;
+  border-radius: 0;
+  margin: 5px;
+  background-color: transparent;
+  border: 2px solid white;
+}
+#testimonials .quote:hover .customer {
+  display: block;
+  font-size: .7em;
+  text-align: right;
+}
+
+

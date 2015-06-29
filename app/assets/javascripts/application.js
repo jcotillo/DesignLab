@@ -26,9 +26,12 @@ $(function() {
   var randSlide = Math.floor(Math.random()*slideqty);
 
 
-
-  $('.fullheight').css('height', wheight); //set to window tallness  
-
+// jQuery for page scrolling feature - requires jQuery Easing plugin
+$(function() {
+   $('.fullheight').css('height', wheight); //set to window tallness 
+  $('#kids blockquote ').css('min-height', wheight * .9); //set to window tallness 
+ 
+ 
 
   //replace IMG inside carousels with a background image
   $('#featured .item img').each(function() {
@@ -37,15 +40,14 @@ $(function() {
     $(this).remove();
   });
 
-// jQuery for page scrolling feature - requires jQuery Easing plugin
-$(function() {
-    $('a.page-scroll').bind('click', function(event) {
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top
-        }, 1500, 'easeInOutExpo');
-        event.preventDefault();
-    });
+  //adjust height of .fullheight elements on window resize
+  $(window).resize(function() {
+    wheight = $(window).height(); //get the height of the window
+    $('.fullheight').css('height', wheight); //set to window tallness  
+    $('#testimonials blockquote ').css('min-height', wheight * .9); //set to window tallness 
+
+  });
+
 });
 
 

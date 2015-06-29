@@ -33,6 +33,31 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
+.btn {
+    padding: 14px 24px;
+    border: 0 none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+ 
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+}
+ 
+.btn-primary {
+    background: #0099cc;
+    color: #ffffff;
+}
+ 
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    background: #33a6cc;
+}
+ 
+.btn-primary:active, .btn-primary.active {
+    background: #007299;
+    box-shadow: none;
+}
 /**  Header Navigation **/
 
 header .navbar {
@@ -45,35 +70,31 @@ header .navbar-default {
   border: none;
 }
 header .navbar-default .navbar-nav a {
-  color: #AEA152;
-  font-weight: 400;
-  // padding: 5px 8px;
-}
-
-header .navbar-default .navbar-nav a {
-  color: #AEA152;
+  color: black;
   font-weight: 400;
   padding: 5px 8px;
 }
 
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  margin-right: 25px;
+}
 header .navbar-default .navbar-nav a:hover {
-  color: #EEC856;
+  color: #7851E8;
 } 
 
-header .navbar-default .navbar-nav .active a {
-  font-weight: 700;
-  color: #FF7330;
-  background: transparent;
-  border-bottom: 2px solid #FF7330;
-  text-shadow: none;
-}
+// header .navbar-default .navbar-nav .active a {
+//   font-weight: 700;
+//   background: transparent;
+//   border-bottom: 2px solid #7851E8;
+//   text-shadow: none;
+// }
 
-header .navbar-default .navbar-nav .active a:hover {
-  color: #EEC856;
-  border-bottom: 2px solid #EEC856;
-  background: transparent;
-  text-shadow: none;
-}
+// header .navbar-default .navbar-nav .active a:hover {
+//   color: #EEC856;
+//   border-bottom: 2px solid #EEC856;
+//   background: transparent;
+//   text-shadow: none;
+// }
 
 
 /**  Navbar Brand **/
@@ -83,14 +104,14 @@ header .navbar-brand {
   background-size: 85%;
   background-repeat: no-repeat;
   background-position: 15px 0;
-  // margin-top: 10px;
+  margin-top: 10px;
   width: 150px;
   height: auto;
 }
 
 /**  Navbar Toggle **/
 header .navbar-toggle {
-  background-color:  #E7DDDF;
+  background-color:  #6333E2;
 }
 
 header .navbar-default .navbar-toggle .icon-bar {
@@ -102,37 +123,6 @@ and (max-width: 768px) {
   header .navbar-collapse.in {
     background-color: rgba(231,221,223, .5);
   }
-}
-/**  nav inbody **/
-
-header .inbody {
-  background: rgba(104,73,49,.9);
-}
-
-header .navbar.inbody {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
-header .navbar.inbody .navbar-nav {
-  padding-top: 10px;
-}
-
-header .inbody .navbar-brand {
-  background-size: 43px;
-  background-position: top left;
-  margin-top: 5px;
-  padding-bottom: 0;
-  margin-left: 10px;
-}
-
-header .inbody .navbar-brand h1 {
-  font-size: 1.1em;
-  padding-left: 38px;
-}
-
-header .inbody .navbar-brand span.subhead {
-  display: none;
 }
 
 /**  Carousel Fade **/
@@ -171,7 +161,6 @@ header .inbody .navbar-brand span.subhead {
 }
 
 #featured .item {
-  margin-top:65px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -179,22 +168,48 @@ header .inbody .navbar-brand span.subhead {
   height: 100%;
 }
 
+ .carousel-caption {
+      background-color: transparent;
+      position: static;
+      max-width: 550px;
+      padding: 0 20px;
+      margin:0 auto;
+      margin-top: 200px;
+      text-align:center;
+    }
+
+  .carousel-caption h1,
+  .carousel-caption .lead {
+    margin: 0;
+    line-height: 1.25;
+    color: #fff;
+    text-shadow: 0 1px 1px rgba(0,0,0,.4);
+  }
+  .carousel-caption .btn {
+    margin-top: 10px;
+  }
+
+.carousel .learnmore {
+  border-radius: 0;
+  border: 2px solid white;
+  background-color: transparent;
+}
 /**  Footer **/
 
 footer {
-  background: #2d2d2d;
-  color: white;
+  background: white;
+  color: black;
   font-size: .8em;
   text-align: center;
   padding: 5px 0 10px 0;
 }
 
 footer a {
-  color: #E3D98D;
+  color: #7851E8;
 }
 
 footer a:hover {
-  color: #EEC856 !important;
+  color: #0DFFFF !important;
 }
 
 footer .email{
@@ -211,12 +226,12 @@ footer .navbar {
 footer .navbar-default {
   background-color: transparent;
   border: none;
-  margin-right: 40px;
+  margin-right: 60px;
 }
 
 footer .navbar-nav>li a {
   padding-top: 0;
   padding-bottom: 0;
   text-decoration: underline;
-  color: #E3D98D !important;
+  color: black !important;
 }
