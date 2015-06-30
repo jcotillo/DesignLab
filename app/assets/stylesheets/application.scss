@@ -13,6 +13,7 @@
  *= require_tree .
  *= require_self
  */
+@import "jquery-ui";
 @import "font-awesome";
 @import "bootstrap-sprockets";
 @import "bootstrap";
@@ -197,6 +198,8 @@ and (max-width: 768px) {
 /**  Footer **/
 
 footer {
+  margin:0;
+  max-height: 40px;
   background: white;
   color: black;
   font-size: .8em;

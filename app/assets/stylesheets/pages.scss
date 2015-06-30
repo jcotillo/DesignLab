@@ -44,11 +44,6 @@
   margin-bottom: 40px;
 }
 
-#mission .statement, .services {
-  text-align: center;
-
-}
-
 #mission i.fa {
   padding:10px;
   border-radius: 35px;
@@ -61,9 +56,7 @@
 
 /**  Page -- History **/
 #history {
- padding: 70px;
- background-color: #E3D98D;
- background-image: linear-gradient(to bottom, #E7DDDF, #E3D98D);
+ margin-bottom: 50px;
  min-height: 500px;
 }
 #history .heading {
@@ -78,6 +71,25 @@
  background-repeat: no-repeat;
  background-position: center center;
 }
+
+/**  Page -- Vision **/
+#vision {
+ margin:0;
+ min-height:200px;
+ background-color: #E7BBED;
+}
+
+.visionheading {
+ font-weight: 400;
+ text-align: center;
+}
+
+#vision .statement {
+  line-height: 200px;
+  text-align: center;
+}
+
+
 /**  Page -- Team **/
 
 .meetus {
@@ -87,8 +99,8 @@
 
 #team {
   padding: 70px;
-  background-color: #E3D98D;
-  background-image: linear-gradient(to bottom, #E3D98D, #AEA152);
+  // background-color: #E3D98D;
+  // background-image: linear-gradient(to bottom, #E3D98D, #AEA152);
 }
 
 #team h2{
@@ -145,7 +157,7 @@
 }
 
 #kids blockquote .quote:hover {
-  background-color: rgba(239,240,196,.9);
+  background-color: rgba(255,255,255,.9);
 }
 
 #kids #camp {
@@ -154,7 +166,7 @@
 }
 
 #kids #afterschool {
-  background: image-url('camp1.jpg') no-repeat center center;
+  background: image-url('sewingkit.jpg') no-repeat center center;
   background-size: cover;
 }
 
@@ -185,15 +197,16 @@
 
 
 #kids .quote:hover .more {
-  min-height:300px;
+  min-height:100px;
   font-family: "Open Sans", sans-serif;
   font-weight: 100;
   display: block;
   opacity: 1;
-  font-size: .8em;
+  font-size: .9em;
   line-height: 120%;
 }
 #kids .quote:hover .learnmore {
+  margin-top: 10px;
   display: block;
   opacity: 1;
   color: black;
@@ -201,34 +214,69 @@
   border-radius: 0;
   margin: 20px;
   background-color: transparent;
-  border: 2px solid white;
+  border: 2px solid #7851E8;
 }
 #kids .quote:hover .customer {
   display: block;
   font-size: .7em;
   text-align: right;
 }
+ 
+@media screen and (min-width: 768px) {
 
-
-/**  Page -- Testimonials **/
-
-#testimonials {
-  padding: 0;
+  #myModal .modal-header  {
+    text-align: center;
+    background-color: black;
+    color: white;
+  }
+  #myModal .modal-dialog  {
+    text-align: center;
+    width:900px;
+  }
+  #myModal .info  {
+    padding: 15px;
+  }
+  #myModal .modal-dialog .registernow {
+    color: black;
+    background-color: transparent;
+    border-radius: 0;
+    border: 2px solid #7851E8;
+  }
 }
 
-#testimonials h2 {
+.form {
+  margin-top:100px;
+}
+.sidebar {
+  margin-top: 75px;
+  padding: 40px;
+}
+.form-pic {
+  min-height: 400px;
+  background: image-url('buttons.jpg') no-repeat center center;
+  background-size: cover;
+  }
+
+/**  Page -- Adults **/
+
+#adults {
+  margin-top:50px;
+  padding: 25px 0;
+}
+
+#adults h2 {
   display: none;
 }
 
-#testimonials blockquote {
+#adults blockquote {
   margin: 0;
   padding: 0;
   border-left: none;
-  min-height: 500px;
+  min-height: 150px;
   position: relative;
 }
 
-#testimonials blockquote .quote {
+#adults blockquote .quote {
   background-color: rgba(255,255,255,.6);
   padding: 20px 5%;
   position: absolute;
@@ -238,39 +286,39 @@
   border-radius: 0 50px 0 0;
 }
 
-#testimonials blockquote .quote:hover {
-  background-color: rgba(239,240,196,.9);
+#adults blockquote .quote:hover {
+  background-color: rgba(255,255,255,.9);
 }
 
-#testimonials #janeh {
-  background: image-url('buttons.jpg') no-repeat center center;
+#adults #sip {
+  background: image-url('sewing.jpg') no-repeat center center;
   background-size: cover;
 }
 
-#testimonials #johnb {
-  background: image-url('camp1.jpg') no-repeat center center;
+#adults #adultclasses {
+  background: image-url('sewingkit.jpg') no-repeat center center;
   background-size: cover;
 }
 
-#testimonials #mcphersons {
-  background: image-url('cat.jpg') no-repeat center center;
+#adults #adultprogram {
+  background: image-url('girl.jpg') no-repeat center center;
   background-size: cover;
 }
 
-#testimonials #lorraines {
+#adults #adultother {
   background: image-url('catflower.jpg') no-repeat center center;
   background-size: cover;
 }
 
-#testimonials .quote {
+#adults .quote {
   font-size: 1.2em;
   line-height: 110%;
   font-weight: 400;
 }
 
 
-#testimonials .quote .more, #testimonials .customer, 
-#testimonials .learnmore {
+#adults .quote .more, #testimonials .customer, 
+#adults .learnmore {
   opacity: 0;
   font-size: 0;
   line-height: 0;
@@ -278,28 +326,28 @@
 }
 
 
-#testimonials .quote:hover .more {
+#adults .quote:hover .more {
+  min-height:100px;
   font-family: "Open Sans", sans-serif;
   font-weight: 100;
   display: block;
   opacity: 1;
-  font-size: .8em;
+  font-size: .9em;
   line-height: 120%;
 }
-#testimonials .quote:hover .learnmore {
+#adults .quote:hover .learnmore {
+  margin-top: 10px;
   display: block;
   opacity: 1;
   color: black;
   font-size: .8em;
   border-radius: 0;
-  margin: 5px;
+  margin: 20px;
   background-color: transparent;
-  border: 2px solid white;
+  border: 2px solid #7851E8;
 }
-#testimonials .quote:hover .customer {
+#adults .quote:hover .customer {
   display: block;
   font-size: .7em;
   text-align: right;
 }
-
-
