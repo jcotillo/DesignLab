@@ -4,7 +4,7 @@
 
 /**  Page -- Reviews **/
 .reviews {
-  background-color: #E7DDDF;
+  background-color: #EFF9F0;
 }
 
 .reviews blockquote {
@@ -16,15 +16,15 @@
 .reviews .headline {
   display: block;
   text-align: center;
-  min-height: 100px;
+  line-height: 20px;
 }
 
 .reviewer {
   display: block;
   border-left: 50px;
 	text-align: center;
-	font-weight: 400;
-	color: #6D680A;
+	font-weight: 700;
+	color: #5F3A66;
 } 
 
 
@@ -36,7 +36,6 @@
 #mission {
   background-color: #E7DDDF;
   min-height:300px;
-  // background-image: linear-gradient(to bottom, #EFAF5D, #E7DDDF);
 }
 #mission .heading {
   text-align: center;

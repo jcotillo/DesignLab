@@ -19,11 +19,11 @@
 @import "bootstrap";
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800|Roboto+Slab:400,100,300,700);
-
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700);
 /**  Basic Page CSS **/
 body{
-  font-family: "Roboto Slab", sans-serif;
-  font-weight: 300;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
   font-size: 2em;
   position: relative;
 }
@@ -62,7 +62,8 @@ h1, h2, h3, h4, h5, h6 {
 /**  Header Navigation **/
 
 header .navbar {
-  padding: 5px 0 8px 0;
+  min-height: 65px;
+  padding: 10px;
   transition: all .5s ease-out;
 }
 
@@ -73,14 +74,14 @@ header .navbar-default {
 header .navbar-default .navbar-nav a {
   color: black;
   font-weight: 400;
-  padding: 5px 8px;
+  padding-right: 5px;
 }
 
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
   margin-right: 25px;
 }
 header .navbar-default .navbar-nav a:hover {
-  color: #7851E8;
+  color: #80C65D;
 } 
 
 // header .navbar-default .navbar-nav .active a {
@@ -102,17 +103,17 @@ header .navbar-default .navbar-nav a:hover {
 
 header .navbar-brand {
   background: image-url('logo.jpg');
-  background-size: 85%;
+  background-size: 80%;
   background-repeat: no-repeat;
   background-position: 15px 0;
-  margin-top: 10px;
+  margin-top: 5px;
   width: 150px;
   height: auto;
 }
 
 /**  Navbar Toggle **/
 header .navbar-toggle {
-  background-color:  #6333E2;
+  background-color:  #5F3A66;
 }
 
 header .navbar-default .navbar-toggle .icon-bar {
@@ -122,7 +123,7 @@ header .navbar-default .navbar-toggle .icon-bar {
 @media only screen
 and (max-width: 768px) {
   header .navbar-collapse.in {
-    background-color: rgba(231,221,223, .5);
+    background-color: rgba(255,255, 255, .5);
   }
 }
 
@@ -170,20 +171,23 @@ and (max-width: 768px) {
 }
 
  .carousel-caption {
-      background-color: transparent;
-      position: static;
-      max-width: 550px;
-      padding: 0 20px;
-      margin:0 auto;
-      margin-top: 200px;
-      text-align:center;
-    }
+    border-radius: 10px;
+    border: 5px solid #7AC056;
+    background-color: rgba(255,255,255, 0.9);
+    position: static;
+    max-width: 550px;
+    padding:30px;
+    margin:0 auto;
+    margin-top: 200px;
+    text-align:center;
+  }
 
   .carousel-caption h1,
   .carousel-caption .lead {
+    padding-bottom: 13px;
     margin: 0;
     line-height: 1.25;
-    color: #fff;
+    color: black;
     text-shadow: 0 1px 1px rgba(0,0,0,.4);
   }
   .carousel-caption .btn {
@@ -192,7 +196,8 @@ and (max-width: 768px) {
 
 .carousel .learnmore {
   border-radius: 0;
-  border: 2px solid white;
+  color:black;
+  border: 2px solid #5F3A66;
   background-color: transparent;
 }
 /**  Footer **/
@@ -201,22 +206,20 @@ footer {
   margin:0;
   max-height: 40px;
   background: white;
-  color: black;
-  font-size: .8em;
   text-align: center;
   padding: 5px 0 10px 0;
 }
 
 footer a {
-  color: #7851E8;
+  color: #5F3A66;
 }
 
 footer a:hover {
-  color: #0DFFFF !important;
+  color: #80C65D !important;
 }
 
 footer .email{
-  font-size: 1.4em;
+  font-size: .9em;
   font-weight: 700;
   color: #FF7330;
 }
@@ -229,12 +232,11 @@ footer .navbar {
 footer .navbar-default {
   background-color: transparent;
   border: none;
-  margin-right: 60px;
+  margin-right: 40px;
 }
 
 footer .navbar-nav>li a {
+  font-size: .9em;
   padding-top: 0;
   padding-bottom: 0;
-  text-decoration: underline;
-  color: black !important;
 }
