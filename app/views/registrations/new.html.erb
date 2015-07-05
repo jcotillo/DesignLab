@@ -1,6 +1,6 @@
 <div class="container">
-  <div class="row fullheight">
-    <div class="col-sm-6 form">
+  <div class="row">
+    <div class="col-md-6 form">
       <%= form_for(@registration, html: {class: 'form-horizontal'}) do |f| %>
       <% if @registration.errors.any? %>
         <div id="error_explanation">
@@ -13,50 +13,50 @@
           </ul>
         </div>
       <% end %>
-      <div class="field form-group">
-        <%= f.label :program, class: 'control-label' %>
+      <div class="form-group">
+        <%= f.label :program, class: 'col-sm-2 control-label' %>
         <div class="col-sm-10">
            <%= select_tag(:courses_id, options_for_select([['Six Week Program', 1], ['12 Week Program', 2],]), class: 'form-control') %>
         </div>
       </div>
-      <div class="field form-group">
-        <%= f.label :date, class: 'control-label' %>
+      <div class="form-group">
+        <%= f.label :date, class: 'col-sm-2 control-label' %>
         <div class="col-sm-10">
           <%= f.datetime_local_field :purchased_at, class: 'form-control' %>
         </div>
       </div>
-      <div class="field form-group">
-        <%= f.label :full_name, class: 'control-label' %>
+      <div class="form-group">
+        <%= f.label :full_name, class: 'col-sm-2 control-label' %>
         <div class="col-sm-10">
           <%= f.text_field :full_name, class: 'form-control' %>
         </div>
       </div>
-      <div class="field form-group">
-        <%= f.label :child_name, class: 'control-label' %>
+      <div class="form-group">
+        <%= f.label :child_name, class: 'col-sm-2 control-label' %>
         <div class="col-sm-10">
           <%= f.text_field :child_name, class: 'form-control' %>
         </div>
       </div>
-      <div class="field form-group">
-        <%= f.label :email, class: 'control-label' %>
+      <div class="form-group">
+        <%= f.label :email, class: 'col-sm-2 control-label' %>
         <div class="col-sm-10">
           <%= f.text_field :email, class: 'form-control' %>
         </div>
       </div>
-      <div class="field form-group">
-        <%= f.label :telephone, class: 'control-label' %>
+      <div class="form-group">
+        <%= f.label :telephone, class: 'col-sm-2 control-label' %>
         <div class="col-sm-10">
           <%= f.telephone_field :telephone, class: 'form-control' %>
         </div>
       </div>
       <div class="actions form-group">
-        <div class="col-sm-offset-1 col-sm-10">
+        <div class="col-sm-offset-2 col-sm-10">
           <%= f.submit %>
         </div>
       </div>
      <% end %>
     </div>
-    <div class="col-sm-6 sidebar">
+    <div class="col-md-6 sidebar">
       <div class="form-pic">
       </div>
     </div>

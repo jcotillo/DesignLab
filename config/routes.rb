@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   get "/kids" => "pages#kids"
   get "/adults" => "pages#adults"
   get "/parties" => "pages#parties"
+  get "/digital" => "pages#digital"
   get "/contact" => "pages#contact"
   get "/registration" => "registrations#new"
 

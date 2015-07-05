@@ -10,8 +10,8 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
  *= require_self
+ *= require_tree .
  */
 @import "jquery-ui";
 @import "font-awesome";
@@ -203,11 +203,10 @@ and (max-width: 768px) {
 /**  Footer **/
 
 footer {
-  margin:0;
   max-height: 40px;
   background: white;
   text-align: center;
-  padding: 5px 0 10px 0;
+  padding: 15px;
 }
 
 footer a {
@@ -229,6 +228,11 @@ footer .navbar {
   min-height: 0;
 }
 
+footer .address {
+  font-size: 0.6em;
+  color: #5F3A66 !important;
+}
+
 footer .navbar-default {
   background-color: transparent;
   border: none;
@@ -239,4 +243,19 @@ footer .navbar-nav>li a {
   font-size: .9em;
   padding-top: 0;
   padding-bottom: 0;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #5F3A66 !important;
+}
+
+@media only screen
+and (max-width: 768px) {
+  footer {
+    text-align: center;
+    margin: 30px;
+  }
+  footer .email{
+    padding: 30px;
+  }
 }

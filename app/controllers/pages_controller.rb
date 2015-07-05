@@ -14,6 +14,9 @@ class PagesController < ApplicationController
   def parties
   end
 
+  def digital
+  end
+
   def contact
   end
 end

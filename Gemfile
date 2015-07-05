@@ -1,7 +1,9 @@
 source 'https://rubygems.org'
 
-gem 'jquery-ui-rails'
+gem 'underscore-rails'
+gem 'gmaps4rails'
 gem 'font-awesome-rails'
+gem 'jquery-ui-rails'
 gem 'bootstrap-sass', '~> 3.3.5'
 gem 'autoprefixer-rails'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
